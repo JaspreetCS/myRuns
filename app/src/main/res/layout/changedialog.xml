@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="20dp"
+        android:onClick="OpenCamera"
+        android:text="Open Camera"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/camera"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="SelectFromGallery"
+        android:text="Select From Gallery"
+        android:textSize="14sp" />
+</RelativeLayout>

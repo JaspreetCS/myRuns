@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Account Preferences"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="Name, Email, Class, etc"
+            android:summary="User Profile"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.myruns3"
+                android:targetClass="com.example.myruns3.UserProfile"
+                />
+        </Preference>
+        <CheckBoxPreference
+            android:title="Privacy Setting"
+            android:summary="Posting your records anonymously"
+            app:key="c"
+            app:iconSpaceReserved="false">
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Additional Settings"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:title="Unit Preference"
+            android:summary="Select the units"
+            android:defaultValue="Metric (Kilometers)"
+            android:dialogTitle="@string/unit_preferences"
+            android:entries="@array/pref_units"
+            android:entryValues="@array/pref_units"
+            android:key="@string/pref_units"
+            app:iconSpaceReserved="false">
+        </ListPreference>
+        <EditTextPreference
+            android:title="Comments"
+            android:summary="Please enter your comments"
+            android:key="comment"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Misc."
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="Webpage"
+            android:summary="https://www.sfu.ca/computing.html"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://www.sfu.ca/computing.html" />>
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

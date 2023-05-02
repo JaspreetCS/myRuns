@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MyRuns</string>
+    <string name="unit_preferences">Unit Preferences</string>
+    <string name="pref_units">pref_units</string>
+    <string name="inputType">inputType</string>
+    <string name="activityType">activityType</string>
+
+    <string-array name="pref_units">
+        <item>Metric (Kilometers)</item>
+        <item>Imperial (Miles)</item>
+    </string-array>
+
+    <string-array name="inputType">
+        <item>Manual Entry</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string-array name="activityType">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Country Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps_view">MapsViewActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
